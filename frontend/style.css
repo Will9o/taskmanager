@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #0f172a;
+
+    color: white;
+
+    padding: 30px;
+}
+
+.container {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #38bdf8;
+}
+
+.dashboard {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.card {
+
+    background: #1e293b;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.card span {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #38bdf8;
+}
+
+#pesquisa {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    border-radius: 10px;
+}
+
+form {
+
+    background: #1e293b;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+}
+
+textarea {
+
+    resize: vertical;
+
+    min-height: 80px;
+}
+
+button {
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+button:hover {
+
+    opacity: 0.8;
+}
+
+form button {
+
+    background: #38bdf8;
+
+    color: black;
+}
+
+.filtros {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.filtros button {
+
+    flex: 1;
+
+    background: #334155;
+
+    color: white;
+}
+
+#lista {
+
+    list-style: none;
+}
+
+.tarefa {
+
+    background: #1e293b;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    margin-bottom: 15px;
+}
+
+.topo {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.prioridade {
+
+    padding: 5px 10px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.baixa {
+    background: #22c55e;
+}
+
+.media {
+    background: #eab308;
+    color: black;
+}
+
+.alta {
+    background: #ef4444;
+}
+
+.descricao {
+
+    margin: 10px 0;
+
+    opacity: 0.9;
+}
+
+.info {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    opacity: 0.8;
+}
+
+.acoes {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.btn-concluir {
+    background: #22c55e;
+    color: white;
+}
+
+.btn-editar {
+    background: #eab308;
+}
+
+.btn-excluir {
+    background: #ef4444;
+    color: white;
+}
+
+.concluida {
+
+    opacity: 0.6;
+}
+
+.concluida h3 {
+
+    text-decoration: line-through;
+}
+
+.topbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.btn-nova {
+
+    background: #38bdf8;
+
+    color: black;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}

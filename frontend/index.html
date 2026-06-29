@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TaskManager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="topbar">
+
+            <h1>TaskManager</h1>
+
+            <a href="nova.html" class="btn-nova">
+                + Nova tarefa
+            </a>
+
+        </div>
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h3>Total</h3>
+                <span id="total">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Pendentes</h3>
+                <span id="pendentes">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Concluídas</h3>
+                <span id="concluidas">0</span>
+            </div>
+
+        </div>
+
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Pesquisar tarefa..."
+        >
+
+        <div class="filtros">
+
+            <button onclick="filtrar('todas')">
+                Todas
+            </button>
+
+            <button onclick="filtrar('pendentes')">
+                Pendentes
+            </button>
+
+            <button onclick="filtrar('concluidas')">
+                Concluídas
+            </button>
+
+        </div>
+
+        <ul id="lista"></ul>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
